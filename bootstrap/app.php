@@ -32,7 +32,7 @@ $capsule->bootEloquent();
 
 $container['db'] = function($container) use($capsule) {
     return $capsule;
-}
+};
 
 $container['view'] = function ($container) {
     $view = new \Slim\Views\Twig(__DIR__ . '/../resources/views', [
